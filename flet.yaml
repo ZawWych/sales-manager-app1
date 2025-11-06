@@ -1,0 +1,28 @@
+name: "Менеджер продаж"
+description: "Приложение для учета продаж и подзаказов"
+version: "1.0.0"
+pubspec:
+  version: 1.0.0
+  name: sales_manager
+  description: Менеджер продаж
+
+# ИКОНКИ
+icons:
+  - android/icon-192.png
+  - android/icon-512.png
+  adaptive-icons:
+    foreground: "android/adaptive-icon.png"
+    background: "#1a1a1a"  # Темный фон для адаптивных иконок
+
+# Разрешения для Android
+permissions:
+  - android.permission.INTERNET
+  - android.permission.WRITE_EXTERNAL_STORAGE
+  - android.permission.READ_EXTERNAL_STORAGE
+
+# Настройки сборки
+build:
+  apk:
+    build-type: release
+    target-platforms:
+      - android-arm64
